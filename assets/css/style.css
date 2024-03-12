@@ -1,0 +1,163 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Reset de margens e padding para o header */
+header {
+  margin: 0;
+  padding: 0px 20px;
+  position: relative;
+  height: 150px;
+  display: flex;
+  align-items: center;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(../images/shenlong_bar.png);
+  background-color: #fef8ff;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+  /* Ajuste o valor para controlar a transparência (0 a 1) */
+  z-index: -1;
+  /* Coloca a imagem atrás do conteúdo do header */
+}
+
+.bar {
+  background-color: #eba32e;
+  padding: 2px;
+  border-top: solid 1px #fac149;
+  border-bottom: solid 1px #fac149;
+}
+
+main {
+  margin: auto;
+  grid-gap: 3rem;
+  display: grid;
+  gap: 3rem;
+  grid-template-areas: "sidebar main anchors";
+  grid-template-columns: minmax(0, 10rem) minmax(0, 2.5fr) minmax(0, 10rem);
+  background-color: #fef8ff;
+  padding: 20px;
+  justify-items: center;
+}
+
+nav {
+  padding-top: 20px;
+  width: 100%;
+}
+
+nav div {
+  border-bottom: 1px solid #eba32e;
+  margin: 0;
+}
+
+nav li {
+  padding-bottom: 10px;
+}
+
+article {
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 20px 40px;
+  box-shadow: 6px 4px 18px -5px rgba(128, 128, 128, 0.51);
+  -webkit-box-shadow: 6px 4px 18px -5px rgba(128, 128, 128, 0.51);
+  -moz-box-shadow: 6px 4px 18px -5px rgba(128, 128, 128, 0.51);
+  border: 0.2px solid #0091d971;
+  width: 95%;
+  text-align: justify;
+}
+
+article h1 {
+  margin: 0;
+  color: #0091d9;
+}
+
+.image {
+  float: inline-end;
+  width: 20%; /* Ajuste conforme necessário */
+  padding-right: 10px;
+  text-align: center;
+}
+
+section div {
+  border-bottom: 1px solid red;
+}
+section h4 {
+  margin: 0;
+  color: red;
+}
+
+section h6 {
+  color: darkorange;
+}
+
+aside {
+  padding-top: 20px;
+  width: 100%;
+}
+
+aside div {
+  border-bottom: 1px solid #eba32e;
+  margin: 0;
+}
+
+aside li {
+  padding-bottom: 10px;
+}
+
+aside ul {
+  position: fixed;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: grey;
+}
+
+ul {
+  list-style: none;
+  padding-left: 5px;
+}
+
+a {
+  color: #0091d9;
+  text-decoration: none;
+}
+
+.current {
+  color: darkorange;
+  font-weight: bold;
+}
+
+a:hover {
+  color: red;
+}
+
+section ul li:before {
+  content: "\2022";
+  margin-right: 5px;
+  padding: 10px;
+}
+
+footer {
+  min-height: 130px;
+  padding: 20px;
+  background-image: url(../images/background.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #fef8ff;
+
+}
